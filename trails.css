@@ -1,0 +1,640 @@
+/* --- HERO --- */
+.hero-video {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    background: #0f1113;
+}
+
+.trails-hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+}
+
+/* --- CATEGORIES & CARDS --- */
+.category-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    color: #FF4500;
+    text-shadow: 2px 2px 4px rgba(255,69,0,0.7);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#beginner-trails h2 {
+     color: #06ff13;
+    }
+#intermediate-trails h2 {
+    color: #ffe600;
+}
+#extreme-trails h2 {
+    color: #fc2121;
+}
+
+.trail-details {
+    display: flex;
+    gap: 25px;
+    margin: 20px 0;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #5a5858;
+}
+#beginner-trails .trail-details i { color: #4CAF50; margin-right: 5px; }
+#intermediate-trails .trail-details i { color: #ddc916; margin-right: 5px; }
+#extreme-trails .trail-details i { color: #d12e2e; margin-right: 5px; }
+
+#beginner-trails.btn-watch {
+    align-self: flex-start;
+    background: #2E7D32;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#beginner-trails.btn-watch:hover { background: #1B5E20; }
+
+#intermediate-trails .btn-watch {
+    align-self: flex-start;
+    background: #cfbb09;
+    color: #111417;
+    padding: 12px 30px;
+    text-decoration: none;
+}
+
+#intermediate-trails.btn-watch:hover { background: #c9b810; }
+
+#extreme-trails .btn-watch {
+    align-self: flex-start;
+    background: #d12e2e;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+}
+
+#extreme-trails.btn-watch:hover { background: #b82525; 
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 1100px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* --- VIDEO GALLERY--- */
+.video-gallery-container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.trails-description {
+    font-family: 'Roboto', Arial, sans-serif; 
+    max-width: 750px;
+    margin: 0px auto 50px;
+    text-align: center;
+    
+    font-size: 18px;
+    font-weight: 400; 
+    color: #cccccc; 
+    line-height: 28px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.description-first {
+    color: #73cc73; 
+    display: block; 
+    margin-bottom: 12px; 
+    font-size: 22px; 
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.video-item {
+    background: #1a1d21;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.video-box {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #0f1113;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.video-link {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("postertrails.webp") center/cover no-repeat;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.video-link:hover {
+    color: #FF4500;
+}
+
+.video-info {
+    padding: 20px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.video-info h3 { font-family: 'Oswald', sans-serif; color: #70b3b3; }
+
+.btn-back {
+    color: #ccc;
+    font-size: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btn-back:hover { color: #4CAF50; }
+
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.hero-label {
+    display: block;
+    color: #70b3b3;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(48px, 10vw, 88px);
+     color: #ff4000;
+     text-shadow: 2px 2px 4px rgba(255,69,0,0.7);
+     font-weight: bolder;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #70b3b3;
+    text-shadow: 2px 2px 4px rgba(19, 10, 7, 0.7);
+}
+
+/* CATEGORY SECTIONS */
+.category-section {
+    padding: 60px 0;
+    content-visibility: auto;
+    contain-intrinsic-size: 900px;
+}
+
+.trail-card {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    background: #ffffff;
+    color: #333;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.trail-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    flex: 0 0 30%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    overflow: hidden; 
+    align-items: stretch; 
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    flex: 1;
+    padding: 20px 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-content h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: #1a1d21;
+    margin-bottom: 10px;
+}
+
+.trail-details {
+    display: flex;
+    gap: 25px;
+    margin: 15px 0;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.trail-details i {
+    color: #2E7D32;
+    margin-right: 8px;
+}
+
+.btn-watch {
+    align-self: flex-start;
+    background: #2E7D32;
+    color: white;
+    padding: 14px 32px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-watch:hover {
+    background: #1b5e20;
+    box-shadow: 0 5px 15px rgba(46, 125, 50, 0.4);
+}
+
+/* VIDEO GALLERY SECTION */
+.video-gallery-section {
+    background: linear-gradient(180deg, #1e2a32, #0a0c0e);
+    padding: 120px 0;
+    border-top: 4px solid #70b3b3;
+    content-visibility: auto;
+    contain-intrinsic-size: 900px;
+}
+
+#video-gallery .h2 {
+    font-size: 100px;
+    color: red;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 30px;
+}
+
+.video-item {
+    background: #1a1d21;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.video-item:hover {
+    border-color: #70b3b3;
+    transform: scale(1.02);
+}
+
+.video-box {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #000;
+}
+
+.video-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.video-info h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #70b3b3;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.btn-back {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-back:hover {
+    color: #70b3b3;
+}
+
+/*BUTTON FOR SHOP-HIRE*/
+.shop-hire-section {
+    padding: 70px 20px;
+    text-align: center;
+    background: #0f1113;
+    border-top: 3px solid #00c896;
+    border-bottom: 3px solid #00c896;
+    content-visibility: auto;
+    contain-intrinsic-size: 260px;
+}
+
+.shop-hire-section h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.shop-hire-section p {
+    color: #9fbec0;
+    margin-bottom: 30px;
+}
+
+.shop-hire-section-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.trails-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #00c896;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: white;
+    color: #00c896;
+}
+
+.secondary-btn {
+    border: 2px solid #00c896;
+    color: #00c896;
+    background: transparent;
+}
+
+.secondary-btn:hover {
+    background: #00c896;
+    color: #0f1113;
+}
+
+/* =============== MOBILE (under 500px) =============== */
+@media (max-width: 499px) {
+
+    .video-bg {
+        display: block;
+    }
+
+    /* HERO */
+    .hero-video {
+        height: 60vh;
+    }
+
+    .hero-label {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .category-title {
+        font-size: 40px;
+    }
+
+    .trail-card {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .card-image {
+        flex: none;
+        width: 100%;
+        height: 180px;
+    }
+
+    .card-content {
+        padding: 15px 20px;
+    }
+
+    .card-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .trail-details {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 0.85rem;
+    }
+
+    .btn-watch {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .video-gallery-section {
+        padding: 60px 0;
+    }
+
+    .trails-description {
+        font-size: 15px;
+        padding: 10px 15px 0;
+    }
+
+    .description-first {
+        font-size: 18px;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .shop-hire-section {
+        padding: 40px 20px;
+    }
+
+    .shop-hire-section h3 {
+        font-size: 22px;
+    }
+
+    .trails-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .cta-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+/* =============== TABLET (500px to 900px) =============== */
+@media (min-width: 500px) and (max-width: 900px) {
+
+    .video-bg {
+        display: block;
+    }
+
+    /* HERO */
+    .hero-video {
+        height: 60vh;
+    }
+
+    .hero-label {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .category-title {
+        font-size: 55px;
+    }
+
+    .trail-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card-image {
+        flex: none;
+        width: 100%;
+        height: 220px;
+    }
+
+    .card-content {
+        padding: 20px 25px;
+    }
+
+    .video-gallery-section {
+        padding: 80px 0;
+    }
+
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .trails-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .cta-btn {
+        width: 80%;
+        justify-content: center;
+    }
+
+} 
