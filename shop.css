@@ -1,0 +1,563 @@
+/* ================= GLOBAL SHOP ================= */
+.shop-hero h2 {
+    font-size: 38px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.shop-page p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #14e9f8;
+    text-shadow: 0 0 10px rgba(255,69,0,0.6);
+}
+
+.product-card,
+.offer-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-card .description,
+.offer-card .description {
+    font-size: 15px;
+    min-height: 60px;
+}
+
+.product-card .btn-main {
+    margin-top: auto;
+    align-self: center;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center; 
+    overflow: hidden;   
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.product-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain; 
+    background: #111;
+    padding: 0px;   
+}
+
+/* ================= HERO SECTIONS ================= */
+.shop-hero {
+    height: 400px;
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;   
+    background: #000;   
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%); 
+    object-fit: cover;               
+    z-index: 1;                     
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 2; 
+    background: rgba(0, 0, 0, 0.4); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.shop-hero h1 {
+    font-size: 60px;  
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+
+.shop-hero p {
+    font-size: 22px;
+}
+
+.hero-offers h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FF4500;
+    text-shadow: 0 0 10px rgba(255,69,0,0.6);
+}
+
+.hero-offers h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(50px, 10vw, 70px);
+    font-weight: bolder;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #FF4500;
+    text-shadow: 0 0 10px rgba(250, 90, 32, 0.6);
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-offers p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255,69,0,0.6);
+    letter-spacing: 1px;
+}
+
+.hero-bestsellers h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(50px, 10vw, 70px);
+    font-weight: bolder;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #4fdddd;
+    text-shadow: 0 0 10px rgba(144, 214, 247, 0.6);
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-bestsellers p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255,69,0,0.6);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+/* mtb / kids hero */
+.hero-mountain h1,
+.hero-kids h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(50px, 10vw, 70px);
+    font-weight: bolder;
+    color: #FF4500;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-mountain p,
+.hero-kids p {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px 3px rgba(113, 234, 255, 0.6);
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ================= SPECIAL OFFERS SECTION ================= */
+.offers-section {
+    padding: 80px 0;
+    background: #0f1113;
+    border-bottom: 5px solid #FF4500;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.offer-card {
+    background: #1a1d21;
+    border-radius: 16px;
+    text-align: center;
+    transition: 0.35s;
+    position: relative;
+    border: 1px solid rgba(255,69,0,0.2);
+}
+
+.offer-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(255,69,0,0.25);
+}
+
+.featured {
+    border: 2px solid #FF4500;
+}
+
+.offer-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    background: #111;
+    padding: 0px;
+}
+
+.offer-card h2 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.offer-card .description {
+    color: #ccc;
+    padding: 0 15px;
+}
+
+.price {
+    margin-top: 10px;
+}
+
+.price .old {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.price .new {
+    color: #FF4500;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #FF4500;
+    color: white;
+    padding: 6px 10px;
+    font-size: 11px;
+    border-radius: 5px;
+}
+
+/* ================= BEST SELLERS SECTION ================= */
+.bestsellers-section {
+    padding: 80px 0;
+    background: #2F4F4F;
+    border-bottom: 5px solid #FF4500;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.bestsellers-section .product-card {
+    background: #203636;
+    border-radius: 14px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    will-change: transform; 
+}
+
+.product-card h2 {
+    margin: 15px 0 5px;
+    padding: 0 10px;
+    font-size: 17px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    background: #111;
+}
+
+.product-card .description {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 18px;
+    margin: 10px 0;
+    min-height: 60px;
+    display: flex;       
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card .price {
+    text-align: center; 
+    margin: auto 0 10px; 
+    font-size: 18px;
+    font-weight: 700;
+    color: #FF4500;
+}
+
+/* ================= MTB / KIDS CATEGORY SECTIONS ================= */
+.category-section {
+    padding: 90px 0;
+}
+
+.mountain-section {
+    background: #0f1113;
+    border-top: 4px solid #2F4F4F;
+    border-bottom: 5px solid #FF4500;
+}
+
+.mountain-section .product-card {
+    background: #1c2226;
+}
+
+.kids-section {
+    background: #121a1a;
+    border-top: 4px solid #2F4F4F;
+    border-bottom: 5px solid #FF4500;
+}
+
+.kids-section .product-card {
+    background: #2a2f33;
+}
+
+/* ================= BUTTON ================= */
+.btn-main {
+    display: inline-block;
+    margin: 12px auto 18px;
+    padding: 10px 18px;
+    background: #FF4500;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    white-space: nowrap;
+    width: auto;
+    max-width: fit-content;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background: #2F4F4F;
+}
+
+/*ACCESSORIES BUTTON*/
+
+.accessories-section {
+    margin: 20px auto;
+    width: 80%;
+    align-content: center;
+    padding: 50px 0;
+    text-align: center;
+    
+    background: linear-gradient(135deg, #2F4F4F, #1f2f2f);
+    border-radius: 16px;
+
+    color: white;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.accessories-section h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.accessories-section p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.accessories-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 26px;
+    background: #FF4500;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    letter-spacing: 0.3px;
+}
+
+.accessories-btn {
+    transition: transform 0.3s ease;
+}
+
+.accessories-btn:hover {
+    background: #ff5a1f;
+    transform: translateX(5px);
+    box-shadow: 0 10px 25px rgba(255,69,0,0.3);
+}
+
+/* =============== MOBILE (under 500px) =============== */
+@media (max-width: 499px) {
+
+    /* HERO */
+    .shop-hero {
+        height: 250px;
+    }
+
+    .shop-hero h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .shop-hero p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .hero-offers h1 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .hero-offers p {
+        font-size: 16px;
+    }
+
+    .hero-bestsellers h1 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .hero-bestsellers p {
+        font-size: 16px;
+    }
+
+    .hero-mountain h1,
+    .hero-kids h1 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .hero-mountain p,
+    .hero-kids p {
+        font-size: 16px;
+    }
+
+    /* SPECIAL OFFERS */
+    .offers-section {
+        padding: 40px 0;
+    }
+
+    .offers-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .offer-card img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* BEST SELLERS */
+    .bestsellers-section {
+        padding: 40px 0;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .product-card img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* MTB / KIDS */
+    .category-section {
+        padding: 40px 0;
+    }
+
+    /* ACCESSORIES BUTTON */
+    .accessories-section {
+        width: 95%;
+        padding: 35px 20px;
+    }
+
+    .accessories-section h3 {
+        font-size: 20px;
+    }
+
+    .accessories-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+    }
+
+} 
+
+/* =============== TABLET (500px to 900px) =============== */
+@media (min-width: 500px) and (max-width: 900px) {
+
+    /* HERO */
+    .shop-hero {
+        height: 300px;
+    }
+
+    .shop-hero h1 {
+        font-size: 45px;
+    }
+
+    .shop-hero p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .hero-offers h1,
+    .hero-bestsellers h1,
+    .hero-mountain h1,
+    .hero-kids h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .hero-offers p,
+    .hero-bestsellers p,
+    .hero-mountain p,
+    .hero-kids p {
+        font-size: 18px;
+    }
+
+    /* GRIDS - 2 columns on tablet */
+    .offers-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    /* ACCESSORIES BUTTON */
+    .accessories-section {
+        width: 90%;
+    }
+
+} 

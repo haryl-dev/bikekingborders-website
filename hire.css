@@ -1,0 +1,544 @@
+/* HERO SECTION */
+.hire-hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #0f1113;
+}
+
+.hire-hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-card {
+    max-width: 700px;
+    padding: 50px;
+    border-radius: 18px;
+    background: rgba(15, 17, 19, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 69, 0, 0.3);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.hero-tag {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FF4500;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.hero-card h1 {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-card p {
+    font-size: 18px;
+    color: #cfd8dc;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-btn {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.first-btn {
+    background: #FF4500;
+    color: white;
+    border: 2px solid #FF4500;
+}
+
+.first-btn:hover {
+    background: transparent;
+    color: #FF4500;
+    border: 2px solid #FF4500;
+}
+
+.second-btn {
+    border: 2px solid white;
+    color: white;
+}
+
+.second-btn:hover {
+    background: white;
+    color: #1a1d21;
+}
+
+.hire-section {
+    padding: 100px 0;
+    background: #0f1113; 
+    border-top: 4px solid #FF4500;
+    border-bottom: 2px solid #FF4500;
+}
+
+.section-header h2 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    color: #FF4500;
+}
+
+.section-header p {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: #9fbec0;
+    margin-top: 10px;
+}
+
+.divider {
+    height: 2px;
+    border: none;
+    background: linear-gradient(90deg, transparent, #FF4500, transparent);
+    margin: 40px 0;
+}
+
+.category-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    margin: 40px 0 25px;
+    color: #ffffff;
+    border-left: 5px solid #FF4500;
+    padding-left: 12px;
+}
+
+.hire-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* BIKE CARDS */
+.hire-card {
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    width: 48%; 
+    overflow: hidden;
+    color: #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.hire-card:hover {
+    transform: translateY(-5px);
+}
+
+.hire-card img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hire-info {
+    padding: 20px;
+    width: 60%;
+}
+
+.hire-info h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1a1d21;
+}
+
+.hire-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.hire-price {
+    font-weight: bold;
+    color: #FF4500;
+    margin-bottom: 15px;
+}
+
+.hire-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.hire-btn {
+    flex: 1;
+    text-align: center;
+    padding: 10px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.hire-btn {
+    border: 2px solid #ccc;
+    color: #858484;
+    background: transparent;
+}
+
+.hire-btn.primary {
+    background: #FF4500;
+    color: white;
+    border: 2px solid #FF4500;
+}
+
+.hire-btn:hover {
+    transform: translateY(-2px);
+    border-color: #FF4500;
+    color: #FF4500;
+}
+
+.hire-btn.primary:hover {
+    background: transparent;
+    color: #FF4500;
+}
+
+.btn-outline {
+    border: 2px solid #ccc;
+    color: #858484;
+}
+
+.btn-solid {
+    background: #FF4500;
+    color: white;
+    border: 2px solid #FF4500;
+}
+
+/* HOW IT WORKS SECTION*/
+.how-section {
+    padding: 90px 0;
+    background: #121a1a;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 10%;
+    right: 10%;
+    height: 4px;
+    background: linear-gradient(90deg, #FF4500, #74cece);
+    z-index: 1;
+}
+
+.timeline-step {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 20%;
+}
+
+.timeline-step .icon {
+    width: 60px;
+    height: 60px;
+    background: #FF4500;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 20px;
+    box-shadow: 0 10px 25px rgba(255,69,0,0.25);
+}
+
+/* BUTTON FOR CONTACT PAGE */
+.contact-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #0f1113;
+}
+
+.contact-section h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: #FF4500;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 2px solid #FF4500;
+}
+
+.contact-btn:hover {
+    background: transparent;
+    color: #FF4500;
+    transform: translateY(-3px);
+}
+
+/* =============== MOBILE (under 500px) =============== */
+@media (max-width: 499px) {
+
+    .hero-video {
+        display: none;
+    }
+
+    /* HERO */
+    .hire-hero {
+        height: auto;
+        padding: 60px 15px;
+    }
+
+    .hero-card {
+        padding: 25px 20px;
+        margin: 0 10px;
+    }
+
+    .hero-card h1 {
+        font-size: 35px;
+    }
+
+    .hero-card p {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    /* HIRE SECTION */
+    .hire-section {
+        padding: 50px 0;
+    }
+
+    .section-header h2 {
+        font-size: 40px;
+    }
+
+    .section-header p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .category-title {
+        font-size: 26px;
+        margin: 25px 0 15px;
+    }
+
+    .hire-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hire-card {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .hire-card img {
+    width: 100%;
+    height: 280px;       
+    object-fit: cover;  
+    background: white;  
+    padding: 10px;       
+    object-position: center center;
+    }
+
+    .hire-info {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .hire-info h4 {
+        font-size: 18px;
+    }
+
+    .hire-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hire-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .how-section {
+        padding: 50px 0;
+    }
+
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-step {
+        width: 80%;
+    }
+
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .contact-section h3 {
+        font-size: 20px;
+    }
+
+    .contact-btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px 20px;
+    }
+
+}
+
+/* =============== TABLET (500px to 900px) =============== */
+@media (min-width: 500px) and (max-width: 900px) {
+
+    .hero-video {
+        display: none;
+    }
+
+    /* HERO */
+    .hire-hero {
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .hero-card {
+        padding: 35px 25px;
+    }
+
+    .hero-card h1 {
+        font-size: 30px;
+    }
+
+    .section-header h2 {
+        font-size: 50px;
+    }
+
+    .category-title {
+        font-size: 30px;
+    }
+
+    .hire-card {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .hire-card img {
+        align-self: center;
+        width: 90%;
+        height: 400px;
+        object-fit: cover;
+        background: white;
+        padding: 10px;
+    }
+
+    .hire-info {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hire-buttons {
+        flex-direction: row; 
+        gap: 10px;
+    }
+
+    .hire-btn {
+        flex: 1;
+        text-align: center;
+    }
+
+    .timeline {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-step {
+        width: 40%;
+    }
+
+}

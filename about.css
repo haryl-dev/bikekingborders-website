@@ -1,0 +1,254 @@
+/*ABOUT*/
+.about-hero {
+    height: 350px; 
+    position: relative;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.about-hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-hero-overlay {
+    position: relative;
+    background: rgba(15, 17, 19, 0.7); 
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(50px, 10vw, 70px);
+    text-transform: uppercase;
+}
+
+.about-hero p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: #ff6b2a;
+    font-weight: bold;
+}
+
+/* ABOUT MAIN */
+.about-main {
+    display: flex;
+    align-items: stretch;
+    gap: 50px;
+    padding: 60px;
+    background: #1a1d21;
+    border-radius: 12px;
+    margin: 40px auto;
+    border: 1px solid #ffffff;
+}
+
+.about-text {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.about-text h2 {
+    color: #FF4500;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #e0e0e0;
+    line-height: 1.8;
+}
+
+/*images*/
+.about-image-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 0 0 320px;
+    min-width: 280px;
+    max-width: 320px;
+}
+
+.about-image-stack img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    min-width: 0;
+    max-width: 100%;
+}
+
+/* FEATURES */
+.about-features {
+    background: #1a1d21;
+    padding: 80px 0;
+    border-top: 4px solid #FF4500;
+    border-bottom: 4px solid #FF4500;
+}
+
+.container-feature {
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-box {
+    position: relative;
+    overflow: hidden;
+    flex: 1; 
+    max-width: 300px;
+    background: #1a1d21;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #2F4F4F;
+    transition: 0.3s ease;
+}
+
+.feature-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at top,
+        rgba(47, 79, 79, 0.35),
+        transparent 70%
+    );
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+    border-color: #FF4500;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+.feature-box i {
+    color: #FF4500;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.feature-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* =============== MOBILE (under 500px) =============== */
+@media (max-width: 499px) {
+
+    /* ABOUT HERO */
+    .about-hero,
+    .about-hero-overlay {
+        height: 220px;
+    }
+
+    .about-hero h1 {
+        font-size: 28px;  
+        padding: 0 15px;
+    }
+
+    .about-hero p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    /* ABOUT MAIN */
+    .about-main {
+        flex-direction: column;
+        padding: 25px;
+        gap: 25px;
+        margin: 20px 15px;
+    }
+
+    .about-image-stack {
+        flex-direction: row;
+        gap: 10px;
+        flex: none;
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .about-image-stack img {
+        width: 50%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    /* FEATURES */
+    .container-feature {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        gap: 15px;
+    }
+
+    .feature-box {
+        max-width: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+
+} /* END MOBILE */
+
+/* =============== TABLET (500px to 900px) =============== */
+@media (min-width: 500px) and (max-width: 900px) {
+
+    /* ABOUT HERO */
+    .about-hero,
+    .about-hero-overlay {
+        height: 280px;
+    }
+
+    .about-hero p {
+        font-size: 20px;
+    }
+
+    /* ABOUT MAIN */
+    .about-main {
+        flex-direction: column;
+        padding: 35px;
+        gap: 30px;
+        margin: 25px 20px;
+    }
+
+    .about-image-stack {
+        flex-direction: row;
+        gap: 15px;
+        flex: none;
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .about-image-stack img {
+        width: 50%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    /* FEATURES */
+    .container-feature {
+        flex-wrap: wrap;
+        padding: 0 20px;
+        gap: 15px;
+    }
+
+    .feature-box {
+        flex: 1 1 45%;
+        max-width: 100%;
+    }
+
+}

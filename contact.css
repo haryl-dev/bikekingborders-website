@@ -1,0 +1,371 @@
+/* HERO SECTION */
+.contact-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-hero {
+    position: relative;
+    padding: 90px 0;
+    border-bottom: 4px solid #FF4500;
+
+    background-image: url("./slide1photo1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.contact-hero-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-hero-header h1 {
+    font-size: 50px;
+    color: #FF4500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.contact-hero-header p {
+    color: #cfd8dc;
+    font-size: 25px;
+}
+
+/* cards */
+.contact-info-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-info-card {
+    background: #1a1d21;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    border: 1px solid #2F4F4F;
+    transition: 0.3s;
+}
+
+.contact-info-card i {
+    font-size: 35px;
+    color: #FF4500;
+    margin-bottom: 15px;
+}
+
+.contact-info-card h2 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contact-info-card p {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+    border-color: #FF4500;
+}
+
+
+/* LOCATION/MAPS SECTION*/
+
+.location-section {
+    padding: 90px 0;
+    background: #121a1a;
+    border-top: 4px solid #FF4500;
+}
+
+.location-section .section-header h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #FF4500;
+    margin-bottom: 10px;
+}
+
+.location-section .section-header p {
+    text-align: center;
+    color: #cfd8dc;
+    margin-bottom: 50px;
+}
+
+.map-wrapper {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.map-box {
+    flex: 2;
+    min-width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.tripadvisor-box {
+    flex: 1;
+    min-width: 260px;
+    background: #1a1d21;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #2F4F4F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tripadvisor-box h2 {
+    color: #FF4500;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.tripadvisor-box p {
+    color: #cfd8dc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tripadvisor-btn {
+    display: inline-block;
+    background: #FF4500;
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.tripadvisor-btn:hover {
+    background: transparent;
+    border: 2px solid #FF4500;
+    color: #FF4500;
+}
+
+/* FORMS FOR CONTACT */
+
+.contact-forms {
+    padding: 100px 0;
+    background: #0f1113;
+    border-top: 2px solid #FF4500;
+}
+
+.form-section {
+    padding: 60px 20px;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 34px;
+    color: #FF4500;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.form-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #74cece, transparent);
+    margin: 40px 0;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #1a1d21;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #2F4F4F;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #cfd8dc;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #0f1113;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #FF4500;
+}
+
+/* submit button */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #FF4500;
+    color: white;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: transparent;
+    border: 2px solid #FF4500;
+    color: #FF4500;
+}
+
+.form-section:not(:last-child) {
+    border-bottom: 2px solid #74cece33;
+}
+
+/* =============== MOBILE (under 500px) =============== */
+@media (max-width: 499px) {
+
+    .contact-hero {
+        padding: 50px 0;
+    }
+
+    .contact-hero-header h1 {
+        font-size: 25px;
+        padding: 0 15px;
+    }
+
+    .contact-hero-header p {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+
+    .contact-hero-header {
+        margin-bottom: 30px;
+    }
+
+    .contact-info-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .contact-info-card {
+        width: 100%;
+    }
+
+    .location-section {
+        padding: 50px 0;
+    }
+
+    .location-section .section-header h2 {
+        font-size: 22px;
+        padding: 0 15px;
+    }
+
+    .location-section .section-header p {
+        font-size: 14px;
+        padding: 0 15px;
+        margin-bottom: 25px;
+    }
+
+    .map-wrapper {
+        flex-direction: column;
+    }
+
+    .map-box iframe {
+        height: 250px;
+    }
+
+    .tripadvisor-box {
+        margin: 0 15px;
+    }
+
+    .contact-forms {
+        padding: 50px 0;
+    }
+
+    .form-title {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    .contact-form {
+        padding: 25px 15px;
+        margin: 0 15px;
+    }
+
+}
+
+/* =============== TABLET (500px to 900px) =============== */
+@media (min-width: 500px) and (max-width: 900px) {
+
+    .contact-hero {
+        padding: 60px 0;
+    }
+
+    .contact-hero-header h1 {
+        font-size: 28px;
+        padding: 0 20px;
+    }
+
+    .contact-hero-header p {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+
+    .contact-info-card {
+        width: 45%;
+    }
+
+    .location-section .section-header h2 {
+        font-size: 28px;
+    }
+
+    .map-wrapper {
+        flex-direction: column;
+    }
+
+    .map-box iframe {
+        height: 350px;
+    }
+
+    .form-title {
+        font-size: 26px;
+    }
+
+    .contact-form {
+        padding: 30px 20px;
+    }
+
+}
