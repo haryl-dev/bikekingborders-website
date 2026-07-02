@@ -28,7 +28,7 @@ Large video assets were excluded from this GitHub repository due to GitHub file 
 The complete working version, including multimedia content, is available through the live deployment link from Netlify above.
 
 ## Documentation
-Technical documentation including source code analysis, testing results, and screenshots is included in the `/documentation` folder.
+Technical documentation including html and css validation, performance testing results, and screenshots is included in the pdf
 
 ## Author
 Haryl Daine Asuncion
